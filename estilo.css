@@ -1,5 +1,6 @@
 /* Layout
 ----------------------------------------*/
+
 html, body, #home {
 	height: 100%;
 }
@@ -7,9 +8,11 @@ html, body, #home {
 
 
 body {
-	background: url(../fundocomtras3.png) no-repeat center center;
+	background: url(../imagens/fundocomtras3.png) no-repeat center center;
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
+
+
 
 }
 
@@ -76,7 +79,7 @@ nav.navbar-transparente {
 	padding:  10px 20px;
 }
 
-.btn-rosa .btn-whats {
+.btn-rosa {
 	border: 2px solid #fe5fa2;
 	background: #fe5fa2;
 	font-weight: 500;
@@ -88,8 +91,13 @@ nav.navbar-transparente {
 	
 }
 
+.btn-whats {
+	border: 2px solid #fe5fa2;
+	background: #fe5fa2;
+	font-weight: 500;
+}
 
-.btn-rosa:hover .btn-whats:hover {
+.btn-rosa:hover {
 	
 	background: #FFFFFF;
 	color: #fe5fa2;
@@ -102,7 +110,11 @@ nav.navbar-transparente {
 
 }
 
-
+.btn-whats:hover {
+	background: #FFFFFF;
+	color: #fe5fa2;
+	font-weight: 550;
+}
 /* Estrutura conteúdos
 -----------------------------------------*/
 #servicos {
@@ -139,6 +151,12 @@ nav.navbar-transparente {
 	padding-top: 5px;
 }
 
+.rsocial:hover {
+	width: 130px;
+	position: center;
+	padding-top: 5px;
+}
+
 .maps {
 	width: 600px;
 	height: 250px;
@@ -151,7 +169,7 @@ nav.navbar-transparente {
 footer {
 	padding: 20px 0px 30px 0px;
 	text-align: center;
-	background: url(../fundo-rodape.png) no-repeat center top;
+	background: url(../imagens/fundo-rodape.png) no-repeat center top;
 	margin-top: 30px;
 	
 	
@@ -175,7 +193,10 @@ h2 {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-	.btn-rosa .btn-whats {
+	.btn-rosa {
+		font-size: 0.8em;
+	}
+	.btn-whats {
 		font-size: 0.8em;
 	}
 	.rsocial {
