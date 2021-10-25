@@ -1,6 +1,5 @@
 /* Layout
 ----------------------------------------*/
-
 html, body, #home {
 	height: 100%;
 }
@@ -11,8 +10,6 @@ body {
 	background: url(../fundocomtras3.png) no-repeat center center;
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
-
-
 
 }
 
@@ -79,7 +76,7 @@ nav.navbar-transparente {
 	padding:  10px 20px;
 }
 
-.btn-rosa {
+.btn-rosa .btn-whats {
 	border: 2px solid #fe5fa2;
 	background: #fe5fa2;
 	font-weight: 500;
@@ -91,13 +88,8 @@ nav.navbar-transparente {
 	
 }
 
-.btn-whats {
-	border: 2px solid #fe5fa2;
-	background: #fe5fa2;
-	font-weight: 500;
-}
 
-.btn-rosa:hover {
+.btn-rosa:hover .btn-whats:hover {
 	
 	background: #FFFFFF;
 	color: #fe5fa2;
@@ -110,11 +102,7 @@ nav.navbar-transparente {
 
 }
 
-.btn-whats:hover {
-	background: #FFFFFF;
-	color: #fe5fa2;
-	font-weight: 550;
-}
+
 /* Estrutura conteúdos
 -----------------------------------------*/
 #servicos {
@@ -147,12 +135,6 @@ nav.navbar-transparente {
 
 .rsocial {
 	width: 120px;
-	position: center;
-	padding-top: 5px;
-}
-
-.rsocial:hover {
-	width: 130px;
 	position: center;
 	padding-top: 5px;
 }
@@ -193,10 +175,7 @@ h2 {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-	.btn-rosa {
-		font-size: 0.8em;
-	}
-	.btn-whats {
+	.btn-rosa .btn-whats {
 		font-size: 0.8em;
 	}
 	.rsocial {
@@ -281,10 +260,6 @@ h2 {
 	position: center;
 	padding-top: 5px;
 	}
-	iframe {
-		width: 600px;
-		height: 250px;
-	}
 	.maps {
 	width: 600px;
 	height: 230px;
@@ -310,10 +285,6 @@ h2 {
 	width: 120px;
 	position: center;
 	padding-top: 5px;
-	}
-	iframe {
-		width: 600px;
-		height: 250px;
 	}
 	.maps {
 	width: 700px;
