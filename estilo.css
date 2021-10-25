@@ -91,6 +91,12 @@ nav.navbar-transparente {
 	
 }
 
+.btn-whats {
+	border: 2px solid #fe5fa2;
+	background: #fe5fa2;
+	font-weight: 500;
+}
+
 .btn-rosa:hover {
 	
 	background: #FFFFFF;
@@ -104,6 +110,11 @@ nav.navbar-transparente {
 
 }
 
+.btn-whats:hover {
+	background: #FFFFFF;
+	color: #fe5fa2;
+	font-weight: 550;
+}
 /* Estrutura conteúdos
 -----------------------------------------*/
 #servicos {
@@ -134,10 +145,34 @@ nav.navbar-transparente {
 	padding-bottom: 5px;
 }
 
-.insta {
+.rsocial {
 	width: 120px;
 	position: center;
 	padding-top: 5px;
+}
+
+.rsocial:hover {
+	width: 130px;
+	position: center;
+	padding-top: 5px;
+}
+
+.maps {
+	width: 600px;
+	height: 250px;
+}
+
+
+
+/* Rodapé
+----------------------------------------*/
+footer {
+	padding: 20px 0px 30px 0px;
+	text-align: center;
+	background: url(../fundo-rodape.png) no-repeat center top;
+	margin-top: 30px;
+	
+	
 }
 
 
@@ -150,7 +185,7 @@ h1 {
 	color: #fe5fa2;
 }
 h2 {
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
 	color: #fe5fa2;
@@ -161,12 +196,18 @@ h2 {
 	.btn-rosa {
 		font-size: 0.8em;
 	}
-	.insta {
+	.btn-whats {
+		font-size: 0.8em;
+	}
+	.rsocial {
 	width: 40px;
 	position: center;
 	padding-top: 5px;
 	}
-	
+	.maps {
+	width: 400px;
+	height: 200px;
+	}
 
  }
 
@@ -181,12 +222,18 @@ h2 {
 	.btn-rosa {
 		font-size: 1em;
 	}
-	.insta {
+	.btn-whats {
+		font-size: 0.8em;
+	}
+	.rsocial {
 	width: 60px;
 	position: center;
 	padding-top: 5px;
 	}
-
+	.maps {
+	width: 450px;
+	height: 220px;
+	}
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -200,10 +247,17 @@ h2 {
 	.btn-rosa {
 		font-size: 1.2em;
 	}
-	.insta {
+	.btn-whats {
+		font-size: 0.8em;
+	}
+	.rsocial {
 	width: 80px;
 	position: center;
 	padding-top: 5px;
+	}
+	.maps {
+	width: 500px;
+	height: 250px;
 	}
 
  }
@@ -219,10 +273,21 @@ h2 {
 	.btn-rosa {
 		font-size: 1.3em;
 	}
-	.insta {
+	.btn-whats {
+		font-size: 0.8em;
+	}
+	.rsocial {
 	width: 100px;
 	position: center;
 	padding-top: 5px;
+	}
+	iframe {
+		width: 600px;
+		height: 250px;
+	}
+	.maps {
+	width: 600px;
+	height: 230px;
 	}
 
  }
@@ -238,9 +303,20 @@ h2 {
 	.btn-rosa {
 		font-size: 1.5em;
 	}
-	.insta {
+	.btn-whats {
+		font-size: 1em;
+	}
+	.rsocial {
 	width: 120px;
 	position: center;
 	padding-top: 5px;
+	}
+	iframe {
+		width: 600px;
+		height: 250px;
+	}
+	.maps {
+	width: 700px;
+	height: 250px;
 	}
  }
