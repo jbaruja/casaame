@@ -180,8 +180,10 @@ h2 {
 	.maps {
 	width: 260px;
 	height: 180px;
-}
-
+	}
+	section h2 {
+		margin-top: -150px;
+	}
  }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -203,7 +205,10 @@ h2 {
 	.maps {
 	width: 360px;
 	height: 200px;
-}
+	}
+	section h2 {
+		margin-top: -100px;
+	}
 
  }
 
@@ -226,7 +231,10 @@ h2 {
 	.maps {
 	width: 450px;
 	height: 230px;
-}
+	}
+	section h2 {
+		margin-top: -50px;
+	}
  }
 
 /* Large devices (desktops, 992px and up)*/
@@ -249,6 +257,9 @@ h2 {
 	width: 550px;
 	height: 250px;
 }
+	section h2 {
+		margin-top: -20px;
+	}
 
 
  }
