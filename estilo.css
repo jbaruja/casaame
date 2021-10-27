@@ -182,7 +182,7 @@ h2 {
 	height: 180px;
 	}
 	h2 {
-		margin-top: -150px;
+		margin-top: -250px;
 	}
  }
 
@@ -193,7 +193,7 @@ h2 {
 	}
 	h2 {
 		font-size: 3em;
-		margin-top: -100px;
+		margin-top: -200px;
 	}
 	.btn-rosa {
 		font-size: 1em;
@@ -217,8 +217,8 @@ h2 {
 		font-size: 4em;
 	}
 	h2 {
-		font-size: 4em;
-		margin-top: -50px;
+		font-size: 3.5em;
+		margin-top: -150px;
 	}
 	.btn-rosa {
 		font-size: 1.2em;
@@ -241,8 +241,8 @@ h2 {
 		font-size: 5em;
 	}
 	h2 {
-		font-size: 5em;
-		margin-top: -20px;
+		font-size: 4.0em;
+		margin-top: -100px;
 	}
 	.btn-rosa {
 		font-size: 1.3em;
@@ -265,7 +265,7 @@ h2 {
 		font-size: 6em;
 	}
 	h2 {
-		font-size: 6em;
+		font-size: 5em;
 	}
 	.btn-rosa {
 		font-size: 1.5em;
