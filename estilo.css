@@ -15,7 +15,8 @@
 	}
 
 	.logo {
-		width: 130px;
+		min-width: 130px;
+		max-width: 280px;
 	}
 
 /* Extra small devices (portrait phones, less than 576px)*/
