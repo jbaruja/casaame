@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#grad1 {
+	background-attachment: fixed;
+	font-family: "Open Sans",sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+	  min-width: 320px;
+	  /*max-width: 800px;*/
+	background: rgb(201,224,251);
+	background: radial-gradient(circle, rgba(196,214,236,100) 0%, rgb(238, 217, 226) 100%);
+	margin: auto;
+	/*color: #fe5fa2;*/
+	}
+
+a,i {
+	transition: .5s;
+	text-decoration: none;
+}
+
+.footer-img{
+	width: 70%;
+}
+
+
+
+.nav-itemactive a h6{
+	color: #fe5fa2;
+}
+
+a h6 {
+	color: #c4abc1;
+	font-weight: bold;
+}
+
+a h6:hover{
+	color: #fe5fa2;
+}
+iframe{
+	width: 100%;
+}
+
+.franja{
+	background-color: #fe5fa2;
+	color: white;
+	text-align: center;
+}
+.texthorario{
+	color: #8f007e;
+	
+}
+
+.rsociais{
+	width: 48px
+	
+}
+
+.logoame{
+	width: 60px;
+}
+
+.text-link {
+	color: #8f007e;
+}
+
+.text-link:hover {
+	color: #fe5fa2;
+}
+
