@@ -2,7 +2,7 @@
 
 #grad1 {
 	background-attachment: fixed;
-	font-family: "Open Sans",sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+	font-family: 'Nunito', sans-serif; /*"Open Sans",sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;*/
 	  min-width: 320px;
 	  /*max-width: 800px;*/
 	background: rgb(201,224,251);
@@ -10,6 +10,11 @@
 	margin: auto;
 	/*color: #fe5fa2;*/
 	}
+
+.fonteame{
+	font-family: 'Nunito', sans-serif;
+}
+
 
 a,i {
 	transition: .5s;
