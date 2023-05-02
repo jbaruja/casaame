@@ -1,0 +1,1505 @@
+# Copyright (C) 2022 WP Moose
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Villar 1.0.10\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/villar\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-06-06T02:26:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: villar\n"
+
+#. Theme Name of the theme
+msgid "Villar"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://www.wpmoose.com/themes/villar-theme/"
+msgstr ""
+
+#. Description of the theme
+msgid "Villar is a multi-purpose blog and magazine theme with minimal design. This theme is also compatible with elementor and woocommerce plugin, so you can add e-commerce support to your website immediately. Get Villar and make something cool today!"
+msgstr ""
+
+#. Author of the theme
+msgid "WP Moose"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.wpmoose.com"
+msgstr ""
+
+#: comments.php:30
+msgid "One Comment"
+msgstr ""
+
+#. translators: %s: The count of comments
+#: comments.php:33
+msgid "%s Comments"
+msgstr ""
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/admin-page.php:6
+msgid "Villar Theme"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:11
+msgid "Archive Settings"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:19
+msgid "Archive Style"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:28
+msgid "Archive Entry Thumbnail Style"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:36
+msgid "Archive Image Size"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:46
+msgid "Archive Entry Border Style"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:54
+msgid "Pagination in Archive"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:68
+msgid "Want more archive settings?"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:72
+#: inc/customizer/sections/footer.php:27
+#: inc/customizer/sections/single-post.php:44
+msgid "Meet our Villar Pro"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:83
+msgid "Entry Structure"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:88
+#: inc/customizer/sections/single-post.php:63
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:91
+#: inc/customizer/sections/single-post.php:66
+msgid "Excerpt"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:94
+#: inc/customizer/sections/single-post.php:60
+msgid "Category"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:97
+#: inc/customizer/sections/single-post.php:95
+msgid "Tags"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:100
+msgid "Read More & Metas"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:107
+#: inc/customizer/sections/single-post.php:76
+msgid "Metas Structure"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:112
+#: inc/customizer/sections/single-post.php:84
+msgid "Comments"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:115
+#: inc/customizer/sections/single-post.php:81
+msgid "Byline"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:118
+#: inc/customizer/sections/single-post.php:87
+msgid "Posted On"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:121
+#: inc/customizer/sections/single-post.php:90
+msgid "Views"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:123
+#: inc/customizer/sections/single-post.php:92
+msgid "Post Views Counter plugin is required"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:131
+msgid "Disable Read More Link"
+msgstr ""
+
+#: inc/customizer/sections/archive.php:139
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:80
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:68
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:90
+msgid "Disable Thumbnail"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:11
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:23
+msgid "Do you want to remove theme credits in the footer?"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:37
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:46
+msgid "Disable Credits"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:55
+msgid "Disable To Top Button"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:13
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:17
+msgid "Primary Darken"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:21
+msgid "Gradient Start"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:25
+msgid "Gradient End"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:33
+msgid "Gradient Text"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:37
+#: inc/universal/options.php:186
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:41
+msgid "Light Highlight"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:45
+msgid "Light Border"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:49
+msgid "Light Base"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:53
+msgid "Light Title"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:57
+msgid "Light Title Secondary"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:61
+#: inc/universal/options.php:185
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:65
+msgid "Dark Highlight"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:69
+msgid "Dark Border"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:73
+msgid "Dark Base"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:77
+msgid "Dark Title"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:81
+msgid "Dark Title Secondary"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:100
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/sections/global-colors.php:122
+msgid "Want More Color Options? See Villar Pro"
+msgstr ""
+
+#: inc/customizer/sections/global-container.php:11
+msgid "Container"
+msgstr ""
+
+#: inc/customizer/sections/global-container.php:19
+msgid "Single Post Container Style"
+msgstr ""
+
+#: inc/customizer/sections/global-container.php:28
+msgid "Page Container Style"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:11
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:19
+msgid "Archive Layout"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:28
+msgid "Single Layout"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:37
+msgid "Page Layout"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:47
+msgid "Store Layout"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:57
+msgid "Sidebar Width"
+msgstr ""
+
+#: inc/customizer/sections/global-sidebar.php:66
+msgid "Sidebar Border Style"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:11
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:19
+msgid "Want More Typography Options? See Villar Pro"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:25
+msgid "Default Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:37
+msgid "Brand Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:46
+msgid "Site Title Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:55
+msgid "Tagline Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:64
+msgid "Top Menu Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:74
+msgid "Footer Menu Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:83
+msgid "Navigation Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:92
+msgid "Heading Font Family"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:101
+msgid "Site Title Text Uppercase"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:109
+msgid "Top Menu Text Uppercase"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:117
+msgid "Footer Menu Text Uppercase"
+msgstr ""
+
+#: inc/customizer/sections/global-typography.php:125
+msgid "Navigation Text Uppercase"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:12
+msgid "Banner Settings"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:25
+msgid "In our Pro version, we provide widgets area in Banner."
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:26
+msgid "We also provide 9 additional widgets for you to create awesome websites."
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:30
+#: inc/customizer/sections/header-navbar.php:28
+msgid "Get Villar Pro"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:32
+msgid "View Demo Site"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:42
+msgid "Disable Header Banner"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:50
+msgid "Disable Header Image"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:58
+msgid "Disable Site Title"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:66
+msgid "Disable Tagline"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:75
+msgid "Disable Padding"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:84
+msgid "Disable Search"
+msgstr ""
+
+#: inc/customizer/sections/header-banner.php:93
+#: inc/customizer/sections/single-post.php:27
+msgid "Text Alignment"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:11
+msgid "Primary Navbar"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:24
+msgid "We provide some extra features in our pro version, such as sticky navbar, cart button, default color mode and more."
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:38
+msgid "You can set a different logo for dark mode, if empty it will use the default logo."
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:39
+msgid "Logo For Dark Mode"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:54
+msgid "If the custom logo is not set, this text will be displayed."
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:56
+msgid "Text Logo"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:67
+msgid "Default Color Mode"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:75
+msgid "Sticky"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:84
+msgid "Disable Site Brand"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:92
+#: inc/customizer/sections/header-top-bar.php:28
+msgid "Disable Social Menu"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:102
+msgid "Disable Cart Button"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:112
+msgid "Disable Search Button"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:120
+msgid "Disable Color Mode Switcher"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:130
+msgid "Search For Products"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:140
+msgid "Disable Top Border"
+msgstr ""
+
+#: inc/customizer/sections/header-navbar.php:151
+msgid "Edit Logo"
+msgstr ""
+
+#: inc/customizer/sections/header-top-bar.php:12
+msgid "Top Bar"
+msgstr ""
+
+#: inc/customizer/sections/header-top-bar.php:20
+msgid "Disable Top Bar"
+msgstr ""
+
+#: inc/customizer/sections/header-top-bar.php:36
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:90
+msgid "Disable Border"
+msgstr ""
+
+#: inc/customizer/sections/header-top-bar.php:47
+msgid "Edit Menus"
+msgstr ""
+
+#: inc/customizer/sections/preloader.php:11
+msgid "Preloader Settings"
+msgstr ""
+
+#: inc/customizer/sections/preloader.php:18
+msgid "Disable Preloader"
+msgstr ""
+
+#: inc/customizer/sections/single-post.php:11
+msgid "Single Post Settings"
+msgstr ""
+
+#: inc/customizer/sections/single-post.php:18
+msgid "Disable Featured Image"
+msgstr ""
+
+#: inc/customizer/sections/single-post.php:40
+msgid "Want more single post settings?"
+msgstr ""
+
+#: inc/customizer/sections/single-post.php:55
+msgid "Post Header Structure"
+msgstr ""
+
+#: inc/customizer/sections/single-post.php:69
+msgid "Metas"
+msgstr ""
+
+#: inc/customizer/settings.php:158
+msgid "Brand"
+msgstr ""
+
+#: inc/customizer/settings.php:185
+msgid "Copyright &copy; All rights reserved."
+msgstr ""
+
+#: inc/customizer/setup.php:87
+msgid "Global Settings"
+msgstr ""
+
+#: inc/customizer/setup.php:92
+msgid "Header Settings"
+msgstr ""
+
+#: inc/metabox.php:15
+msgid "Villar Theme Settings"
+msgstr ""
+
+#: inc/metabox.php:43
+msgid "Choose Layout"
+msgstr ""
+
+#: inc/metabox.php:55
+msgid "Choose Container Style"
+msgstr ""
+
+#: inc/template-functions.php:104
+#: inc/universal/options.php:119
+msgid "Default"
+msgstr ""
+
+#. Translators: used between list items, there is a space after the comma.
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ""
+
+#: inc/theme-hooks.php:172
+msgid "Mobile Menu Toggle"
+msgstr ""
+
+#: inc/theme-hooks.php:306
+msgid "Color Mode Toggle"
+msgstr ""
+
+#: inc/theme-hooks.php:312
+msgid "Search Modal Toggle"
+msgstr ""
+
+#: inc/theme-hooks.php:360
+#: inc/theme-hooks.php:573
+msgid "Prev"
+msgstr ""
+
+#: inc/theme-hooks.php:361
+#: inc/theme-hooks.php:574
+msgid "Next"
+msgstr ""
+
+#: inc/theme-hooks.php:362
+#: inc/theme-hooks.php:575
+msgid "Page"
+msgstr ""
+
+#. translators: 1: Year, 2: Site Title with home URL, 3: Privacy Policy Link
+#: inc/theme-hooks.php:494
+msgctxt "1: Year, 2: Site Title with home URL, 3: Privacy Policy Link"
+msgid "%1$s %2$s %3$s"
+msgstr ""
+
+#: inc/theme-hooks.php:495
+msgid "Y"
+msgstr ""
+
+#: inc/theme-hooks.php:501
+msgid "by"
+msgstr ""
+
+#: inc/universal/options.php:20
+msgid "No Image"
+msgstr ""
+
+#: inc/universal/options.php:23
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/universal/options.php:24
+#: lib/villar-additional-features/helpers.php:26
+msgid "Medium"
+msgstr ""
+
+#: inc/universal/options.php:25
+#: lib/villar-additional-features/helpers.php:27
+msgid "Large"
+msgstr ""
+
+#: inc/universal/options.php:26
+msgid "Full (original)"
+msgstr ""
+
+#: inc/universal/options.php:65
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/universal/options.php:69
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/universal/options.php:73
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/universal/options.php:85
+msgid "List"
+msgstr ""
+
+#: inc/universal/options.php:86
+msgid "Grid"
+msgstr ""
+
+#: inc/universal/options.php:101
+msgid "Slim"
+msgstr ""
+
+#: inc/universal/options.php:105
+msgid "Full"
+msgstr ""
+
+#: inc/universal/options.php:120
+msgid "Numeric"
+msgstr ""
+
+#: inc/universal/options.php:133
+msgid "1/3"
+msgstr ""
+
+#: inc/universal/options.php:134
+msgid "1/4"
+msgstr ""
+
+#: inc/universal/options.php:145
+msgid "Linear"
+msgstr ""
+
+#: inc/universal/options.php:146
+msgid "Ease"
+msgstr ""
+
+#: inc/universal/options.php:147
+msgid "Ease In"
+msgstr ""
+
+#: inc/universal/options.php:148
+msgid "Ease Out"
+msgstr ""
+
+#: inc/universal/options.php:149
+msgid "Ease In Out"
+msgstr ""
+
+#: inc/universal/options.php:150
+msgid "Ease In Sine"
+msgstr ""
+
+#: inc/universal/options.php:151
+msgid "Ease Out Sine"
+msgstr ""
+
+#: inc/universal/options.php:152
+msgid "Ease In Out Sine"
+msgstr ""
+
+#: inc/universal/options.php:153
+msgid "Ease In Quad"
+msgstr ""
+
+#: inc/universal/options.php:154
+msgid "Ease Out Quad"
+msgstr ""
+
+#: inc/universal/options.php:155
+msgid "Ease In Out Quad"
+msgstr ""
+
+#: inc/universal/options.php:156
+msgid "Ease In Cubic"
+msgstr ""
+
+#: inc/universal/options.php:157
+msgid "Ease Out Cubic"
+msgstr ""
+
+#: inc/universal/options.php:158
+msgid "Ease In Out Cubic"
+msgstr ""
+
+#: inc/universal/options.php:159
+msgid "Ease In Quart"
+msgstr ""
+
+#: inc/universal/options.php:160
+msgid "Ease Out Quart"
+msgstr ""
+
+#: inc/universal/options.php:161
+msgid "Ease In Out Quart"
+msgstr ""
+
+#: inc/universal/options.php:162
+msgid "Ease In Quint"
+msgstr ""
+
+#: inc/universal/options.php:163
+msgid "Ease Out Quint"
+msgstr ""
+
+#: inc/universal/options.php:164
+msgid "Ease In Out Quint"
+msgstr ""
+
+#: inc/universal/options.php:165
+msgid "Ease In Expo"
+msgstr ""
+
+#: inc/universal/options.php:166
+msgid "Ease Out Expo"
+msgstr ""
+
+#: inc/universal/options.php:167
+msgid "Ease In Out Expo"
+msgstr ""
+
+#: inc/universal/options.php:168
+msgid "Ease In Circ"
+msgstr ""
+
+#: inc/universal/options.php:169
+msgid "Ease Out Circ"
+msgstr ""
+
+#: inc/universal/options.php:170
+msgid "Ease In Out Circ"
+msgstr ""
+
+#: inc/universal/options.php:171
+msgid "Ease In Back"
+msgstr ""
+
+#: inc/universal/options.php:172
+msgid "Ease Out Back"
+msgstr ""
+
+#: inc/universal/options.php:197
+msgid "Sans"
+msgstr ""
+
+#: inc/universal/options.php:198
+msgid "Serif"
+msgstr ""
+
+#: inc/universal/options.php:199
+msgid "Mono"
+msgstr ""
+
+#: inc/universal/options.php:200
+msgid "Open Sans (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:201
+msgid "Lato (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:202
+msgid "Abhaya Libre (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:203
+msgid "Playfair (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:204
+msgid "Rokkitt (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:205
+msgid "Kalam (Google Fonts)"
+msgstr ""
+
+#: inc/universal/options.php:216
+msgctxt "heading size"
+msgid "H1"
+msgstr ""
+
+#: inc/universal/options.php:217
+msgctxt "heading size"
+msgid "H2"
+msgstr ""
+
+#: inc/universal/options.php:218
+msgctxt "heading size"
+msgid "H3"
+msgstr ""
+
+#: inc/universal/options.php:219
+msgctxt "heading size"
+msgid "H4"
+msgstr ""
+
+#: inc/universal/options.php:220
+msgctxt "heading size"
+msgid "H5"
+msgstr ""
+
+#: inc/universal/options.php:221
+msgctxt "heading size"
+msgid "H6"
+msgstr ""
+
+#: inc/universal/options.php:234
+msgid "Align Left"
+msgstr ""
+
+#: inc/universal/options.php:235
+msgid "Align Center"
+msgstr ""
+
+#: inc/universal/options.php:236
+msgid "Align Right"
+msgstr ""
+
+#: inc/universal/options.php:249
+msgctxt "border style"
+msgid "None"
+msgstr ""
+
+#: inc/universal/options.php:250
+msgctxt "border style"
+msgid "Border"
+msgstr ""
+
+#: inc/universal/options.php:251
+msgctxt "border style"
+msgid "Shadow"
+msgstr ""
+
+#: inc/universal/options.php:264
+msgctxt "thumbnail style"
+msgid "Round"
+msgstr ""
+
+#: inc/universal/options.php:265
+msgctxt "thumbnail style"
+msgid "Square"
+msgstr ""
+
+#: inc/villar-setup.php:108
+msgid "Default Header Image"
+msgstr ""
+
+#: inc/villar-setup.php:141
+#: inc/villar-setup.php:180
+msgid "Social Menu"
+msgstr ""
+
+#: inc/villar-setup.php:177
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/villar-setup.php:178
+msgid "Top Menu"
+msgstr ""
+
+#: inc/villar-setup.php:179
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/villar-setup.php:211
+msgid "Primary Sidebar"
+msgstr ""
+
+#: inc/villar-setup.php:213
+msgid "Add widgets here to appear in your Primary Sidebar."
+msgstr ""
+
+#: inc/villar-setup.php:223
+msgid "Header Widget Area"
+msgstr ""
+
+#: inc/villar-setup.php:225
+msgid "Add widgets here to appear in your Header Widget Area. Especially used for image or ad widget."
+msgstr ""
+
+#: inc/villar-setup.php:233
+msgid "Front Page Widget Area"
+msgstr ""
+
+#: inc/villar-setup.php:235
+msgid "Add widgets here to appear in your Front Page."
+msgstr ""
+
+#: inc/villar-setup.php:244
+msgid "After Posts Widget Area"
+msgstr ""
+
+#: inc/villar-setup.php:246
+msgid "Add widgets here to appear after post."
+msgstr ""
+
+#. translators: %d: The order of footer sidebar
+#: inc/villar-setup.php:255
+#: inc/villar-setup.php:265
+#: inc/villar-setup.php:275
+msgid "Footer %d"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:9
+msgid "Villar: Author"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:12
+msgid "Author Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:16
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:19
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:17
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:17
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:16
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:16
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:17
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:17
+#: lib/villar-additional-features/app/Widgets/SocialWidget.php:19
+msgid "Title:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:20
+msgid "All Articles Text:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:22
+msgid "All Articles"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:25
+msgid "Choose author or user:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:29
+msgid "Dynamic Author"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:32
+msgid "Use this option to automatically detect author if this sidebar is used on single post template or author template"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:35
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:63
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:74
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:70
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:58
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:86
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:68
+msgid "Full Width"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:40
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:52
+msgid "Border Style"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:46
+msgid "Disable Author Avatar"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:51
+msgid "Avatar Size:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:57
+msgid "Disable Author Description"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:62
+msgid "Disable Background"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:125
+msgid "Author:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/AuthorWidget.php:126
+msgid "Hi, I’m "
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:12
+msgid "Villar: Heading"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:15
+msgid "Heading Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:23
+msgid "Font Family:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:29
+msgid "Font Size:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/HeadingWidget.php:35
+msgid "Uppercase:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:10
+msgid "Villar: Posts Carousel #1"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:13
+msgid "Posts Carousel #1 Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:21
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:21
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:20
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:20
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:21
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:21
+msgid "Select Category:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:23
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:23
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:22
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:22
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:23
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:23
+msgid "All Categories"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:26
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:26
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:25
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:25
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:26
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:26
+msgid "Number of Posts:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:33
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:32
+msgid "Select Thumbnail:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:39
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:51
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:68
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:62
+msgid "Heading Font Family:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:45
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:57
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:74
+msgid "Heading Font Size:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:51
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:79
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:91
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:73
+msgid "Css Ease:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:57
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:80
+msgid "Height:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:68
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:63
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:64
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:52
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:97
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:79
+msgid "Additional CSS class(es): "
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:69
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:64
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:65
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:53
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:98
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:80
+msgid "Separate multiple classes with spaces."
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:74
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:69
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:75
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:63
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:103
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:85
+msgid "Highlight"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:79
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:85
+msgid "Fade"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:84
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:95
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:108
+msgid "Disable Rounded"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:89
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:113
+msgid "Disable Shadow"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:94
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:100
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:97
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:118
+msgid "Disable Categories"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:99
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:110
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:123
+msgid "Disable Meta"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:104
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:115
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:128
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:112
+msgid "Disable Dots"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:109
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:120
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:133
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:117
+msgid "Disable Arrows"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:114
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:125
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:138
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:122
+msgid "Disable Autoplay"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel1Widget.php:119
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:130
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:143
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:127
+msgid "Autoplay Speed in milliseconds:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:10
+msgid "Villar: Posts Carousel #2"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:13
+msgid "Posts Carousel #2 Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:33
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:58
+msgid "Layout:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:39
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:85
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:79
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:101
+msgid "Thumbnail Style:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:45
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:91
+msgid "Thumbnail Size:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsCarousel2Widget.php:105
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:102
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:85
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:107
+msgid "Disable Excerpt"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:9
+msgid "Villar: Posts Grid #1"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:12
+msgid "Posts Grid #1 Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:31
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:31
+msgid "Column Count (xs):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:38
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:38
+msgid "Column Count (md):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid1Widget.php:45
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:45
+msgid "Column Count (lg):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:9
+msgid "Villar: Posts Grid #2"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:12
+msgid "Posts Grid #2 Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsGrid2Widget.php:73
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:95
+msgid "Thumbnail Alignment:"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:10
+msgid "Villar: Posts Slider #1"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:13
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:13
+msgid "Posts Slick Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:38
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:32
+msgid "Show Count (sm):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:44
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:38
+msgid "Show Count (md):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:50
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:44
+msgid "Show Count (lg):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:56
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:50
+msgid "Show Count (xl):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider1Widget.php:62
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:56
+msgid "Show Count (default):"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/PostsSlider2Widget.php:10
+msgid "Villar: Posts Slider #2"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/SocialWidget.php:12
+msgid "Villar: Social"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/SocialWidget.php:15
+msgid "Social Widget"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/WidgetHelper.php:94
+msgid "Upload"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/WidgetHelper.php:95
+msgid "Select Image"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/WidgetHelper.php:96
+msgid "Choose Image"
+msgstr ""
+
+#: lib/villar-additional-features/app/Widgets/WidgetHelper.php:102
+msgid "Remove"
+msgstr ""
+
+#: lib/villar-additional-features/helpers.php:11
+msgctxt "alignment"
+msgid "Left"
+msgstr ""
+
+#: lib/villar-additional-features/helpers.php:12
+msgctxt "alignment"
+msgid "Right"
+msgstr ""
+
+#: lib/villar-additional-features/helpers.php:25
+msgid "Small"
+msgstr ""
+
+#: lib/villar-additional-features/helpers.php:40
+msgid "Vertical"
+msgstr ""
+
+#: lib/villar-additional-features/helpers.php:41
+msgid "Horizontal"
+msgstr ""
+
+#: product-searchform.php:16
+#: searchform.php:19
+msgid "Search for:"
+msgstr ""
+
+#: product-searchform.php:18
+msgid "Search products&hellip;"
+msgstr ""
+
+#: product-searchform.php:22
+msgid "Product Search"
+msgstr ""
+
+#: searchform.php:22
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:27
+msgid "Search"
+msgstr ""
+
+#: template-parts/admin-notices.php:17
+msgid "Welcome to Villar Theme"
+msgstr ""
+
+#: template-parts/admin-notices.php:19
+msgid "First time using our villar theme?"
+msgstr ""
+
+#: template-parts/admin-notices.php:21
+msgid "We've provided some useful information to help you setup with this theme."
+msgstr ""
+
+#: template-parts/admin-notices.php:27
+msgid "Get Started with Villar"
+msgstr ""
+
+#: template-parts/admin-notices.php:30
+msgid "Dismiss This Message"
+msgstr ""
+
+#: template-parts/admin-welcome.php:12
+msgid "Getting Started"
+msgstr ""
+
+#: template-parts/admin-welcome.php:19
+msgid "Theme Documentation"
+msgstr ""
+
+#: template-parts/admin-welcome.php:22
+msgid "It is highly recommended to start here and read the full theme documentation to learn the basics and even more details about how to use the Villar theme. It's worth spending 10 minutes to learn almost everything about this theme."
+msgstr ""
+
+#: template-parts/admin-welcome.php:27
+msgid "Read Documentation"
+msgstr ""
+
+#: template-parts/admin-welcome.php:31
+msgid "Theme Customizer"
+msgstr ""
+
+#: template-parts/admin-welcome.php:34
+msgid "All theme options are here, After reading theme Documentation we recommend you to open the Theme Customizer and play with some options."
+msgstr ""
+
+#: template-parts/admin-welcome.php:40
+msgid "Customize Your Site"
+msgstr ""
+
+#: template-parts/admin-welcome.php:44
+msgid "Theme URI"
+msgstr ""
+
+#: template-parts/admin-welcome.php:47
+msgid "If you want to know more about this theme, you can also take a look at the URI of the theme."
+msgstr ""
+
+#: template-parts/admin-welcome.php:53
+msgid "Take a look"
+msgstr ""
+
+#: template-parts/admin-welcome.php:60
+msgid "Villar Pro Demos"
+msgstr ""
+
+#: template-parts/admin-welcome.php:62
+msgid "Villa Pro has more powerful setup and provides 9 additional widgets with rich variants, Villar Pro allows you to easily create unique looking sites. Here are a few demos that can be installed with one click in the Pro Version."
+msgstr ""
+
+#: template-parts/admin-welcome.php:66
+msgid "More Information"
+msgstr ""
+
+#: template-parts/admin-welcome.php:80
+msgid "Minimal Blog"
+msgstr ""
+
+#: template-parts/admin-welcome.php:83
+#: template-parts/admin-welcome.php:95
+#: template-parts/admin-welcome.php:107
+msgid "Preview"
+msgstr ""
+
+#: template-parts/admin-welcome.php:93
+msgid "Fashion Magazine"
+msgstr ""
+
+#: template-parts/admin-welcome.php:105
+msgid "E-Commerce"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: %1$s: the url of 'post-new.php'
+#: template-parts/content-none.php:29
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:46
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:49
+#: template-parts/content-single.php:83
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:49
+#: template-parts/content.php:60
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content.php:76
+msgid "Read More"
+msgstr ""
+
+#: template-parts/layout/document-open.php:31
+msgid "Skip to content"
+msgstr ""
+
+#. translators: %s: Keywords searched by users
+#: template-parts/search.php:16
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Blank Container Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Blank Full Width Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Container And No Margin Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Container Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Full Width And No Margin Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Villar: Full Width Template"
+msgstr ""

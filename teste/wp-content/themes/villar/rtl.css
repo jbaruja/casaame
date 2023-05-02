@@ -1,0 +1,167 @@
+/**
+Theme Name: Villar
+
+Adding support for languages written in a Right To Left (RTL) direction is easy,
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+*/
+
+/* Reset */
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+/* Accessibility */
+.screen-reader-text:focus {
+    left: auto;
+    right: 5px;
+}
+
+/* Text align */
+.text-left {
+    text-align: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
+/* Float */
+.float-right {
+    float: left;
+}
+
+.float-left {
+    float: right;
+}
+
+/* Post Navigation */
+.fa-angle-double-left::before {
+    content: "\f101";
+}
+
+.fa-angle-double-right::before {
+    content: "\f100";
+}
+
+/* Header Menu */
+@media (min-width: 960px) {
+    .sf-menu > li {
+        float: right;
+    }
+}
+
+.primary-navbar .mobile-menu-toggle .fa-bars {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.primary-navbar .mobile-menu-toggle .fa-times {
+    margin-left: 13px;
+    margin-right: 0;
+}
+
+.primary-navbar .sf-menu::before {
+    right: 12px;
+    left: auto;
+}
+
+.primary-navbar .nav-search-form::before {
+    left: 12px;
+    right: auto;
+}
+
+.primary-navbar .sf-menu .menu-item-has-children > a::after {
+    padding-left: 0;
+    padding-right: 4px;
+}
+
+.villar-social-menu li {
+    float: right;
+}
+
+/* Cart Dropdown */
+.site-header-cart .cart-widget {
+    left: 0;
+    right: auto;
+}
+
+.site-header-cart .cart-widget::before {
+    left: 0.5rem;
+    right: auto;
+}
+
+/* Entry Meta */
+.entry-meta .entry-footer span {
+    float: right;
+}
+
+/* comment */
+.comments-area .comment-list .comment-meta .comment-author img {
+    float: right;
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/* woocommerce-account navigation icon */
+.woocommerce-account .woocommerce-MyAccount-navigation-link a::after {
+    float: left;
+    margin-right: 6px;
+    margin-left: 0;
+}
+
+/* Wordpress alignment */
+.alignleft {
+    float: right;
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.alignright {
+    float: left;
+    margin-right: 24px;
+    margin-left: 0;
+}
+
+.entry-content .alignfull {
+    margin-left: auto !important;
+    margin-right: calc(50% - 50vw) !important;
+}
+
+/* Search */
+.search-submit,
+.wp-block-search .wp-block-search__button,
+.wp-block-woocommerce-product-search button[type=submit] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-input,
+.wp-block-search .wp-block-search__input,
+.wp-block-woocommerce-product-search input[type=search] {
+    border-right-width: 1px;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* woocommerce product */
+.woocommerce div.product .onsale {
+    left: auto;
+    right: 0;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li:nth-child(4n-3) {
+    margin-right: 0;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li:nth-child(4n) {
+    margin-right: 5px;
+}

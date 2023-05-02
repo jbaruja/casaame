@@ -1,0 +1,47 @@
+SELECT *
+FROM (SELECT GROUP_CONCAT(DISTINCT campaigns.campaign_id)      as campaign_ids,
+             cached_title                                      AS title,
+             utm_source,
+             utm_medium,
+             utm_campaign,
+             utm_term,
+             utm_content,
+             COUNT(DISTINCT session_views.id)                  AS views,
+             COUNT(DISTINCT session_views.visitor_id)          AS visitors,
+             COUNT(DISTINCT session_views.session_id)          AS sessions,
+             COUNT(DISTINCT previous_session_views.id)         AS prev_views,
+             COUNT(DISTINCT previous_session_views.visitor_id) AS prev_visitors,
+             COUNT(DISTINCT previous_session_views.session_id) AS prev_sessions,
+             0                                                 AS wc_orders,
+             0                                                 AS wc_gross_sales,
+             0                                                 AS wc_refunds,
+             0                                                 AS wc_refunded_amount
+      FROM wp_independent_analytics_campaigns AS campaigns
+               LEFT JOIN wp_independent_analytics_sessions AS sessions
+                         ON campaigns.campaign_id = sessions.campaign_id
+               LEFT JOIN wp_independent_analytics_views AS initial_views
+                         ON initial_views.id = sessions.initial_view_id
+               LEFT JOIN wp_independent_analytics_resources AS resources
+                         ON resources.id = initial_views.resource_id
+               LEFT JOIN wp_independent_analytics_views AS views
+                         ON sessions.session_id = views.session_id
+               LEFT JOIN (SELECT views.id,
+                                 sessions.visitor_id,
+                                 sessions.session_id
+                          FROM wp_independent_analytics_sessions AS sessions
+                                   LEFT JOIN wp_independent_analytics_views AS views
+                                             ON sessions.session_id = views.session_id
+                          WHERE views.viewed_at BETWEEN :start AND :end) AS session_views
+                         ON views.id = session_views.id
+               LEFT JOIN (SELECT views.id,
+                                 sessions.visitor_id,
+                                 sessions.session_id
+                          FROM wp_independent_analytics_sessions AS sessions
+                                   LEFT JOIN wp_independent_analytics_views AS views
+                                             ON sessions.session_id = views.session_id
+                          WHERE views.viewed_at BETWEEN :prev_start AND :prev_end) AS previous_session_views
+                         ON views.id = previous_session_views.id
+      GROUP BY campaigns.campaign_id,
+               resources.id
+      ORDER BY visitors DESC, views DESC) subquery
+WHERE views > 0

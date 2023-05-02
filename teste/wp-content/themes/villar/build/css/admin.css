@@ -1,0 +1,96 @@
+/**
+  Wordpress Colors
+ */
+/**
+==========================================================================
+ Image Radio Buttons
+==========================================================================
+ */
+.villar-image-radio-button-control {
+  display: table;
+  font-size: 0;
+  line-height: 0;
+}
+.villar-image-radio-button-control .radio-button-label {
+  display: table-cell;
+  padding: 5px;
+}
+.villar-image-radio-button-control .radio-button-label > input {
+  display: none;
+}
+.villar-image-radio-button-control .radio-button-label > img {
+  display: block;
+  cursor: pointer;
+  border: 3px solid #ddd;
+}
+.villar-image-radio-button-control .radio-button-label > input:checked + img {
+  border: 3px solid #2271b1;
+}
+
+.villar-admin-page .w-1\/3 {
+  width: 33.33%;
+}
+.villar-admin-page .clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.villar-admin-page .form-table td {
+  vertical-align: top;
+}
+.villar-admin-page .villar-demo-preview {
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 15px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.villar-admin-page .villar-demo-preview-img {
+  max-width: 100%;
+}
+.villar-admin-page .villar-demo-preview-meta {
+  padding: 12px;
+}
+.villar-admin-page .villar-demo-preview-meta .villar-demo-title {
+  float: left;
+  margin: 0;
+  line-height: 2.15384615;
+}
+.villar-admin-page .villar-demo-preview-meta .villar-demo-preview-link {
+  float: right;
+}
+
+.villar-btn {
+  background-image: linear-gradient(to right, #fcdc96, #f7bd9e, #fcdc96);
+  background-size: 200%;
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+}
+.villar-btn:hover, .villar-btn:focus {
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  background-position: right center;
+}
+
+.villar-notice {
+  border: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+.villar-notice h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.villar-notice p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.villar-notice .action-buttons .villar-btn {
+  margin-right: 12px;
+}
+.villar-notice .action-buttons .villar-btn:last-of-type {
+  margin-right: 0;
+}

@@ -1,0 +1,70 @@
+SELECT *
+FROM (SELECT GROUP_CONCAT(DISTINCT campaigns.campaign_id)      as campaign_ids,
+             cached_title                                      AS title,
+             utm_source,
+             utm_medium,
+             utm_campaign,
+             utm_term,
+             utm_content,
+             COUNT(DISTINCT session_views.id)                  AS views,
+             COUNT(DISTINCT session_views.visitor_id)          AS visitors,
+             COUNT(DISTINCT session_views.session_id)          AS sessions,
+             COUNT(DISTINCT previous_session_views.id)         AS prev_views,
+             COUNT(DISTINCT previous_session_views.visitor_id) AS prev_visitors,
+             COUNT(DISTINCT previous_session_views.session_id) AS prev_sessions,
+             IFNULL(SUM(wc_orders.orders), 0)                  AS wc_orders,
+             IFNULL(SUM(wc_orders.gross_sales), 0)             AS wc_gross_sales,
+             IFNULL(SUM(wc_orders.refunds), 0)                 AS wc_refunds,
+             IFNULL(SUM(wc_orders.refunded_amount), 0)         AS wc_refunded_amount
+      FROM wp_independent_analytics_campaigns AS campaigns
+               LEFT JOIN wp_independent_analytics_sessions AS sessions
+                         ON campaigns.campaign_id = sessions.campaign_id
+               LEFT JOIN wp_independent_analytics_views AS initial_views
+                         ON initial_views.id = sessions.initial_view_id
+               LEFT JOIN wp_independent_analytics_resources AS resources
+                         ON resources.id = initial_views.resource_id
+               LEFT JOIN wp_independent_analytics_views AS views
+                         ON sessions.session_id = views.session_id
+               LEFT JOIN (SELECT views.id,
+                                 sessions.visitor_id,
+                                 sessions.session_id
+                          FROM wp_independent_analytics_sessions AS sessions
+                                   LEFT JOIN wp_independent_analytics_views AS views
+                                             ON sessions.session_id = views.session_id
+                          WHERE views.viewed_at BETWEEN :start AND :end) AS session_views
+                         ON views.id = session_views.id
+               LEFT JOIN (SELECT views.id,
+                                 sessions.visitor_id,
+                                 sessions.session_id
+                          FROM wp_independent_analytics_sessions AS sessions
+                                   LEFT JOIN wp_independent_analytics_views AS views
+                                             ON sessions.session_id = views.session_id
+                          WHERE views.viewed_at BETWEEN :prev_start AND :prev_end) AS previous_session_views
+                         ON views.id = previous_session_views.id
+               LEFT JOIN (SELECT views.id        AS view_id,
+                                 COUNT(DISTINCT
+                                       IF(wc_order_stats.total_sales >= 0, wc_order_stats.order_id,
+                                          null)) AS orders,
+                                 SUM(IF(wc_order_stats.total_sales >= 0, wc_order_stats.total_sales,
+                                        0))      AS gross_sales,
+                                 COUNT(DISTINCT
+                                       IF(wc_order_stats.total_sales < 0, wc_order_stats.order_id,
+                                          null)) AS refunds,
+                                 ABS(SUM(IF(wc_order_stats.total_sales < 0,
+                                            wc_order_stats.total_sales,
+                                            0))) AS refunded_amount
+                          FROM wp_independent_analytics_views AS views
+                                   LEFT JOIN wp_independent_analytics_wc_orders AS wc_orders
+                                             ON views.id = wc_orders.view_id
+                                   LEFT JOIN wp_wc_order_stats AS wc_order_stats
+                                             ON wc_orders.order_id = wc_order_stats.order_id OR
+                                                wc_orders.order_id = wc_order_stats.parent_id
+                          WHERE wc_orders.created_at BETWEEN :start AND :end
+                            AND wc_order_stats.status IN ('wc-completed', 'wc-processing',
+                                                          'wc-refunded')
+                          GROUP BY views.id) AS wc_orders
+                         ON views.id = wc_orders.view_id
+      GROUP BY campaigns.campaign_id,
+               resources.id
+      ORDER BY visitors DESC, views DESC) subquery
+WHERE views > 0

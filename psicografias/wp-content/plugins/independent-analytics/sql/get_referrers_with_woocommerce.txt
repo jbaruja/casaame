@@ -1,0 +1,59 @@
+SELECT *
+FROM (SELECT GROUP_CONCAT(DISTINCT sessions.referrer_id)                             as referrer_ids,
+             IFNULL(referrer_groups.name, referrers.domain)                          as group_name,
+             GROUP_CONCAT(DISTINCT IFNULL(referrer_groups.domain, referrers.domain)) as domain,
+             GROUP_CONCAT(DISTINCT referrer_groups.type)                             as type,
+             COUNT(CASE WHEN views.viewed_at BETWEEN :start AND :end THEN 1 END)     AS views,
+             COUNT(DISTINCT (CASE
+                                 WHEN views.viewed_at BETWEEN :start AND :end
+                                     THEN sessions.visitor_id END))                  AS visitors,
+             COUNT(DISTINCT (CASE
+                                 WHEN views.viewed_at BETWEEN :start AND :end
+                                     THEN sessions.session_id END))                  AS sessions,
+             COUNT(CASE
+                       WHEN views.viewed_at BETWEEN :prev_start AND :prev_end
+                           THEN 1 END)                                               AS prev_period_views,
+             COUNT(DISTINCT (CASE
+                                 WHEN views.viewed_at BETWEEN :prev_start AND :prev_end
+                                     THEN sessions.visitor_id END))                  AS prev_period_visitors,
+             COUNT(DISTINCT (CASE
+                                 WHEN views.viewed_at BETWEEN :prev_start AND :prev_end
+                                     THEN sessions.session_id END))                  AS prev_period_sessions,
+             IFNULL(SUM(wc_orders.orders), 0)                                        AS wc_orders,
+             IFNULL(SUM(wc_orders.gross_sales), 0)                                   AS wc_gross_sales,
+             IFNULL(SUM(wc_orders.refunds), 0)                                       AS wc_refunds,
+             IFNULL(SUM(wc_orders.refunded_amount), 0)                               AS wc_refunded_amount
+      FROM wp_independent_analytics_views AS views
+               LEFT JOIN wp_independent_analytics_sessions AS sessions
+                         ON views.session_id = sessions.session_id
+               LEFT JOIN wp_independent_analytics_referrers AS referrers
+                         ON sessions.referrer_id = referrers.id
+               LEFT JOIN wp_independent_analytics_referrer_groups AS referrer_groups
+                         ON referrers.domain = referrer_groups.domain_to_match
+               LEFT JOIN (SELECT views.id        AS view_id,
+                                 COUNT(DISTINCT
+                                       IF(wc_order_stats.total_sales >= 0, wc_order_stats.order_id,
+                                          null)) AS orders,
+                                 SUM(IF(wc_order_stats.total_sales >= 0, wc_order_stats.total_sales,
+                                        0))      AS gross_sales,
+                                 COUNT(DISTINCT
+                                       IF(wc_order_stats.total_sales < 0, wc_order_stats.order_id,
+                                          null)) AS refunds,
+                                 ABS(SUM(IF(wc_order_stats.total_sales < 0,
+                                            wc_order_stats.total_sales,
+                                            0))) AS refunded_amount
+                          FROM wp_independent_analytics_views AS views
+                                   LEFT JOIN wp_independent_analytics_wc_orders AS wc_orders
+                                             ON views.id = wc_orders.view_id
+                                   LEFT JOIN wp_wc_order_stats AS wc_order_stats
+                                             ON wc_orders.order_id = wc_order_stats.order_id OR
+                                                wc_orders.order_id = wc_order_stats.parent_id
+                          WHERE wc_orders.created_at BETWEEN :start AND :end
+                            AND wc_order_stats.status IN ('wc-completed', 'wc-processing',
+                                                          'wc-refunded')
+                          GROUP BY views.id) AS wc_orders
+                         ON views.id = wc_orders.view_id
+      WHERE views.viewed_at BETWEEN :prev_start AND :end
+      GROUP BY group_name
+      ORDER BY visitors DESC, views DESC) subquery
+WHERE views > 0
